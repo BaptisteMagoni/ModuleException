@@ -2,9 +2,6 @@
 using ModuleException.Exception;
 using ModuleException.ExceptionHandler;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
 
 namespace ModuleException.Handler
@@ -47,6 +44,9 @@ namespace ModuleException.Handler
                     break;
                 case ExceptionDelete:
                     code = StatusCode.DeleteEntity;
+                    break;
+                case ExceptionInvalidToken:
+                    code = StatusCode.InvalideToken;
                     break;
                 case System.Exception:
                     code = StatusCode.BadRequest;

@@ -12,6 +12,7 @@ namespace ModuleException
         NotFoundEntity = 406,
         AlreadyExist = 407,
         DeleteEntity = 408,
+        InvalideToken = 409,
         InternalServerError = 500
     }
 }
